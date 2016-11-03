@@ -1,0 +1,56 @@
+header {
+	display: block; 
+	text-decoration: underline overline;
+	font: 100px Helvetica, Arial, Sans-Serif; 
+	letter-spacing: 5px;  
+	text-align: center;
+	color: #999; 
+}
+
+article {
+	text-align: center;
+	width: 500px; 
+	margin: 0 auto;
+	font-size: 22px; color: #555; 
+	
+}
+
+section {
+	isplay: block;
+	width: 231px;
+     height: 248px;
+     position: relative;
+     margin: auto;
+     perspective: 1000px;
+}
+
+ #caballito {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+	transform-style: preserve-3d;
+	animation: MovCarrusel 15s infinite ;
+}
+
+figure {
+    display: block;
+    position: absolute;
+}
+
+figure:nth-child(1) { transform: rotateY(   0deg ) translateZ( 600px ); }
+figure:nth-child(2) { transform: rotateY(  30deg ) translateZ( 600px ); }
+figure:nth-child(3) { transform: rotateY(  60deg ) translateZ( 600px ); }
+figure:nth-child(4) { transform: rotateY( 90deg ) translateZ( 600px ); }
+figure:nth-child(5) { transform: rotateY( 120deg ) translateZ( 600px );}
+figure:nth-child(6) { transform: rotateY( 150deg ) translateZ( 600px ); }
+figure:nth-child(7) { transform: rotateY( 180deg ) translateZ( 600px ); }
+figure:nth-child(8) { transform: rotateY( 210deg ) translateZ( 600px ); }
+figure:nth-child(9) { transform: rotateY( 240deg ) translateZ( 600px ); }
+figure:nth-child(10) { transform: rotateY( 270deg ) translateZ( 600px ); }
+figure:nth-child(11) { transform: rotateY( 300deg ) translateZ( 600px ); }
+figure:nth-child(12) { transform: rotateY( 330deg ) translateZ( 600px );}
+
+ @keyframes MovCarrusel {
+	0%{ transform: translateZ(-400px) rotateY(0deg);}
+	100%{ transform: translateZ(-400px) rotateY(360deg);}
+ }
